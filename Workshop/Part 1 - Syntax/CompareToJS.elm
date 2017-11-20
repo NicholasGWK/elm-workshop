@@ -5,6 +5,8 @@
 
 module Main exposing (..)
 
+import Html exposing (Html)
+
 
 myNum =
     12
