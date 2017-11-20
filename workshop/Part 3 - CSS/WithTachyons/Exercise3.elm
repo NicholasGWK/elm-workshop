@@ -1,0 +1,2 @@
+-- Copy the contents of the StylesAndMore file, and turn it into the list from Exercise2.elm
+-- Style it up! Run this exericse file with yarn run exercise

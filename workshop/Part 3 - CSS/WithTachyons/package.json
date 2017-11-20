@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "elm-live": "^2.7.5"
+  },
+  "scripts": {
+    "start": "elm-live --output=elm.js StylesAndMore.elm --open",
+    "exercise": "elm-live --output=elm.js Exercise3.elm --open"
+  }
+}

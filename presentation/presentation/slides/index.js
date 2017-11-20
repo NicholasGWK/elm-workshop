@@ -11,7 +11,9 @@ import HTML from "./07-HTML.jsx";
 import HTMLDemo from "./08-HTMLExplanation.jsx";
 import CSS from "./09-CSS.jsx";
 import ElmLive from "./10-ElmLive.jsx";
-
+import TEA from "./11-TEA.jsx";
+import ReduxArch from "./12-ReactRedux.jsx";
+import HTMLProgram from "./13-HtmlProgram.jsx";
 const slides = [].concat(
   Intro,
   WhyElm,
@@ -22,7 +24,10 @@ const slides = [].concat(
   HTML,
   HTMLDemo,
   CSS,
-  ElmLive
+  ElmLive,
+  TEA,
+  ReduxArch,
+  HTMLProgram
 );
 
 export default slides.map((slide, i) => cloneElement(slide, { key: i }));

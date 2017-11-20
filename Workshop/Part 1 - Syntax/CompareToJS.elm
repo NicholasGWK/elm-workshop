@@ -6,6 +6,7 @@
 module Main exposing (..)
 
 import Html exposing (Html)
+import Html.Attributes exposing (..)
 
 
 myNum =
@@ -101,3 +102,31 @@ result =
 
 
 -- Only douple equals for equality
+-- case statement is like switch but with very powerful pattern matching
+
+
+simpleCase myString =
+    case myString of
+        "Nick is cool" ->
+            False
+
+        "Elm is cool" ->
+            True
+
+        _ ->
+            True
+
+
+advancedCase myList =
+    case myList of
+        [] ->
+            "No items :("
+
+        [ item ] ->
+            if item.weight > 100 then
+                "One large item!"
+            else
+                "One small item"
+
+        items ->
+            "Many items!"
