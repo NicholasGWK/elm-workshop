@@ -9,6 +9,9 @@ import SpeedBumps from "./05-speedBumps.jsx";
 import Syntax from "./06-syntaxNotes.jsx";
 import HTML from "./07-HTML.jsx";
 import HTMLDemo from "./08-HTMLExplanation.jsx";
+import CSS from "./09-CSS.jsx";
+import ElmLive from "./10-ElmLive.jsx";
+
 const slides = [].concat(
   Intro,
   WhyElm,
@@ -17,7 +20,9 @@ const slides = [].concat(
   SpeedBumps,
   Syntax,
   HTML,
-  HTMLDemo
+  HTMLDemo,
+  CSS,
+  ElmLive
 );
 
 export default slides.map((slide, i) => cloneElement(slide, { key: i }));
