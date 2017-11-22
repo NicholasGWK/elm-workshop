@@ -14,6 +14,12 @@ import ElmLive from "./10-ElmLive.jsx";
 import TEA from "./11-TEA.jsx";
 import ReduxArch from "./12-ReactRedux.jsx";
 import HTMLProgram from "./13-HtmlProgram.jsx";
+import Msg from "./14-Msg.jsx";
+import Documentation from "./15-Documentation.jsx";
+import TypeAnnotations from "./16-typeAnnotations.jsx";
+import TypeAliases from "./17-typeAlias.jsx";
+import UnionTypes from "./18-UnionTypes.jsx";
+
 const slides = [].concat(
   Intro,
   WhyElm,
@@ -27,7 +33,12 @@ const slides = [].concat(
   ElmLive,
   TEA,
   ReduxArch,
-  HTMLProgram
+  HTMLProgram,
+  Msg,
+  Documentation,
+  TypeAnnotations,
+  TypeAliases,
+  UnionTypes
 );
 
 export default slides.map((slide, i) => cloneElement(slide, { key: i }));

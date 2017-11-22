@@ -1,3 +1,6 @@
+-- Write type annotations using type aliases where it makes sense
+
+
 module Expanding exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, text)

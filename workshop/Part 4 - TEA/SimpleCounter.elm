@@ -9,7 +9,7 @@ model =
 
 
 update msg model =
-    case msg.operation of
+    case msg of
         "Increment" ->
             model + 1
 
@@ -20,7 +20,7 @@ update msg model =
 view model =
     div []
         [ div [] [ model |> toString |> text ]
-        , button [ onClick { operation = "Increment" } ] [ text "Increment" ]
+        , button [ onClick "Increment" ] [ text "Increment" ]
         ]
 
 
