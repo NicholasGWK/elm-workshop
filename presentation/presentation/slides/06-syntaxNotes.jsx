@@ -17,6 +17,9 @@ const Syntax = [
       <ListItem textSize={34} padding={4}>
         Implicit return
       </ListItem>
+      <ListItem textSize={34} padding={4}>
+        Reptition is necessary
+      </ListItem>
     </List>
   </Slide>
 ];

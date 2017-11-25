@@ -4,7 +4,7 @@ import { Slide, Heading, List, ListItem } from "spectacle";
 
 const Outline = [
   <Slide>
-    <Heading size={4} textColor="secondary" caps>
+    <Heading size={4} textColor="tertiary" caps>
       The goal: Get you hacking on Elm!
     </Heading>
   </Slide>,
@@ -24,9 +24,6 @@ const Outline = [
       </ListItem>
       <ListItem textSize={36} padding={4}>
         Expanding Apps (with types!)
-      </ListItem>
-      <ListItem textSize={36} padding={4}>
-        Side effects
       </ListItem>
     </List>
   </Slide>

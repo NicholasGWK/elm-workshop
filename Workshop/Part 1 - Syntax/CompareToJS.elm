@@ -1,6 +1,9 @@
 -- Full docs are here http://elm-lang.org/docs/syntax
 -- This is how you comment in Elm!
 -- Elm has several primitives: Number, Float, Bool, String, Record, List
+{- Sometimes comments are
+   multiline
+-}
 
 
 module Main exposing (..)
@@ -56,8 +59,8 @@ threeTuple =
 --Functions are written with their name followed by the names of the arguments
 
 
-multiplierFunction multipler multiplicand =
-    multipler * multiplicand
+multiplierFunction multiplier multiplicand =
+    multiplier * multiplicand
 
 
 
@@ -88,7 +91,7 @@ isNegative num =
 -- Elm has a pizza operator for forward function application! Super useful for pipe
 
 
-minus4 =
+isMinus4Negative =
     multBy2 -2 |> isNegative
 
 
@@ -102,7 +105,14 @@ result =
 
 
 -- Only douple equals for equality
--- case statement is like switch but with very powerful pattern matching
+
+
+isNick name =
+    name == "Nick"
+
+
+
+-- case statement is like switch but with very powerful pattern matching. _ is default case
 
 
 simpleCase myString =
