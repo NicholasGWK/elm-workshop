@@ -8173,51 +8173,22 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('This is a cool list'),
+							_0: _elm_lang$html$Html$text('This is a cool header'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
 						ctor: '::',
 						_0: A2(
-							_elm_lang$html$Html$ul,
+							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('list tc pa0 ma0'),
+								_0: _elm_lang$html$Html_Attributes$class('i'),
 								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$li,
-									{ctor: '[]'},
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html$text('First Item'),
-										_1: {ctor: '[]'}
-									}),
-								_1: {
-									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$li,
-										{ctor: '[]'},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text('Second Item'),
-											_1: {ctor: '[]'}
-										}),
-									_1: {
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$li,
-											{ctor: '[]'},
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html$text('Third Item'),
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									}
-								}
+								_0: _elm_lang$html$Html$text('stylish text'),
+								_1: {ctor: '[]'}
 							}),
 						_1: {ctor: '[]'}
 					}

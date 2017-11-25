@@ -1,6 +1,6 @@
 module SimpleCounter exposing (..)
 
-import Html exposing (Html, beginnerProgram, button, div, text)
+import Html exposing (beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
 
 

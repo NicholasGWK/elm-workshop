@@ -23,6 +23,10 @@ update msg model =
             model
 
 
+
+-- view: ??? -> Html ???
+
+
 view model =
     div []
         [ div [] [ model |> toString |> text ]
