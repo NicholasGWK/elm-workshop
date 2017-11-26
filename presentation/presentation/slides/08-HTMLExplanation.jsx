@@ -10,6 +10,11 @@ const HTMLDemo = [
   <Slide>
     <Heading size={6}> Elm </Heading>
     <CodePane margin={10} textSize={28} lang="jsx" source={elmSnippet} />
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 2 - Render some things!
+    </Heading>
   </Slide>
 ];
 

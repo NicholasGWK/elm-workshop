@@ -9,7 +9,7 @@ const SpeedBumps = [
     </Heading>
     <List>
       <ListItem textSize={34} padding={4}>
-        Syntax is similar to JS in many ways, but different
+        Syntax can be unfamiliar
       </ListItem>
       <ListItem textSize={34} padding={4}>
         Hardcore functional

@@ -15,12 +15,19 @@ const Syntax = [
         Whitespace matters
       </ListItem>
       <ListItem textSize={34} padding={4}>
-        Implicit return
-      </ListItem>
-      <ListItem textSize={34} padding={4}>
         Reptition is necessary
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Synxtax Example
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 1 - Syntax
+    </Heading>
   </Slide>
 ];
 

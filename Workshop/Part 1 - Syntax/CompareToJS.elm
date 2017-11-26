@@ -35,23 +35,19 @@ myRecord =
 
 
 
+-- Update record
+
+
+newRecord =
+    { myRecord | prop1 = "switched" }
+
+
+
 -- This is a List, not an Array. It is a linked list and does not have index lookup.
 
 
 myList =
     [ "all items", "must be", "the same", "type" ]
-
-
-
--- It has tuples too!
-
-
-myTuple =
-    ( "firstPart", 12 )
-
-
-threeTuple =
-    ( 1, "two", [ "three" ] )
 
 
 
@@ -76,6 +72,15 @@ six =
 
 
 
+-- The pizza operator pipes functions!
+
+
+sixteen =
+    4 |> multBy2 |> multBy2
+
+
+
+-- Same as multBy2 (multBy2 4)
 -- If statements are similar, but else is required
 
 
@@ -84,23 +89,6 @@ isNegative num =
         True
     else
         False
-
-
-
--- Note the return is implicit
--- Elm has a pizza operator for forward function application! Super useful for pipe
-
-
-isMinus4Negative =
-    multBy2 -2 |> isNegative
-
-
-
--- The above is nicer for long functions than
-
-
-result =
-    isNegative (multBy2 -2)
 
 
 

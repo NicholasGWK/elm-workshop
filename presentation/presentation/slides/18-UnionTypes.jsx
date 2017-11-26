@@ -82,6 +82,21 @@ const TypeAliases = [
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6}> Tagged Unions = Msg</Heading>
     <Code textSize={30}>type Msg = Increment Int | Search String | Reset</Code>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      The Solution Example!
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 6 - A full app!
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Thanks!
+    </Heading>
   </Slide>
 ];
 

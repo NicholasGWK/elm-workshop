@@ -10,9 +10,9 @@ const ElmLive = [
       </ListItem>
       <ListItem textSize={34} padding={4}>
         <Link href={"https://github.com/tomekwi/elm-live"}>elm-live</Link> for
-        quick development, {" "}
+        quick development,{" "}
         <Link href={"https://github.com/elm-community/elm-webpack-loader"}>
-          elm-loader {" "}
+          elm-loader{" "}
         </Link>
         for webpack,{" "}
         <Link href={"https://github.com/evancz/react-elm-components"}>
@@ -25,6 +25,11 @@ const ElmLive = [
         Use elm-reactor until you can't
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      CSS Example with elm-live
+    </Heading>
   </Slide>
 ];
 

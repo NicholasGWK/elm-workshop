@@ -25,6 +25,16 @@ const HTMLProgram = [
         The initial model must capture the full app state
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Example - Simple Counter app!
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 3 - Our first app
+    </Heading>
   </Slide>
 ];
 

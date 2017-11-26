@@ -9,12 +9,17 @@ const Msg = [
         The msg doesn't have to be a string!
       </ListItem>
       <ListItem textSize={34} padding={5}>
-        We can just as easily use a record!
+        We can just as easily use a record
       </ListItem>
       <ListItem textSize={34} padding={5}>
-        Sounds a lot like actions!
+        Sounds a lot like actions...
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Expanding our Msg Example
+    </Heading>
   </Slide>
 ];
 

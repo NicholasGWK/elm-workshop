@@ -34,6 +34,27 @@ const TypeAliases = [
         </Fill>
       </Layout>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 5 - Use type aliases
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6}> The Problem with more Msgs</Heading>
+    <List padding={30}>
+      <ListItem textSize={32} padding={5}>
+        Aliases work well when Msgs have the same properties
+      </ListItem>
+      <ListItem textSize={32} padding={5}>
+        What happens when they don't?
+      </ListItem>
+    </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      The Program Example
+    </Heading>
   </Slide>
 ];
 

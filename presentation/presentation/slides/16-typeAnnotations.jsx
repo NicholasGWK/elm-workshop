@@ -20,10 +20,10 @@ const TypeAnnotations = [
     <Heading size={6} padding={48}>
       Type Annotations
     </Heading>
-    <Code textSize={36}>{"double: Int -> Int"}</Code>
+    <Code textSize={36}>{"triple: Int -> Int"}</Code>
     <List>
       <ListItem textSize={34} padding={5}>
-        double matches the name of the function
+        triple matches the name of the function
       </ListItem>
       <ListItem textSize={34} padding={5}>
         The : means "has type"
@@ -55,6 +55,11 @@ const TypeAnnotations = [
         It returns a List of b
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Exercise 4 - Add type annotations
+    </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} padding={48}>
