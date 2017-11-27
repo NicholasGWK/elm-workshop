@@ -82,21 +82,14 @@ sixteen =
 
 -- Same as multBy2 (multBy2 4)
 -- If statements are similar, but else is required
-
-
-isNegative num =
-    if num < 0 then
-        True
-    else
-        False
-
-
-
 -- Only douple equals for equality
 
 
 isNick name =
-    name == "Nick"
+    if name == "Nick" then
+        True
+    else
+        False
 
 
 
