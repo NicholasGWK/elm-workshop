@@ -53,7 +53,7 @@ const TypeAliases = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
-      The Program Example
+      The Problem Example
     </Heading>
   </Slide>
 ];

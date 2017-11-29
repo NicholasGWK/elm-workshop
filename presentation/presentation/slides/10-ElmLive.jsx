@@ -10,16 +10,13 @@ const ElmLive = [
       </ListItem>
       <ListItem textSize={34} padding={4}>
         <Link href={"https://github.com/tomekwi/elm-live"}>elm-live</Link> for
-        quick development,{" "}
+        quick development
+      </ListItem>
+      <ListItem textSize={34}>
         <Link href={"https://github.com/elm-community/elm-webpack-loader"}>
-          elm-loader{" "}
-        </Link>
-        for webpack,{" "}
-        <Link href={"https://github.com/evancz/react-elm-components"}>
-          {" "}
-          react-elm-components
+          elm-loader
         </Link>{" "}
-        for React
+        for webpack
       </ListItem>
       <ListItem textSize={34} padding={4}>
         Use elm-reactor until you can't

@@ -1,6 +1,6 @@
 -- Convert The code from "The Problem" to use Union types for Msg
 
-module Expanding exposing (..)
+module FullApp exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, input, text)
 import Html.Events exposing (onClick)

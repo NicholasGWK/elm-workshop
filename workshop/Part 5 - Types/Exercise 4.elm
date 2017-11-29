@@ -1,7 +1,7 @@
 --Add type annotations!
 
 
-module SimpleCounter exposing (..)
+module Exercise4 exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
@@ -26,6 +26,10 @@ view model =
         [ div [] [ model |> toString |> text ]
         , button [ onClick "Increment" ] [ text "Increment" ]
         ]
+
+
+
+-- Don't worry about this one
 
 
 main =

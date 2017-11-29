@@ -1,7 +1,4 @@
--- Write type annotations using type aliases where it makes sense
-
-
-module Expanding exposing (..)
+module TheProblem exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, input, text)
 import Html.Events exposing (onClick)
@@ -9,9 +6,6 @@ import Html.Events exposing (onClick)
 
 type alias Model =
     { count : Int, searchText : String }
-
-
-type Msg 
 
 
 model : Model
@@ -48,3 +42,6 @@ view model =
 
 main =
     beginnerProgram { model = model, view = view, update = update }
+
+
+type Msg = { operation: String , amount: Int } | { operation: String, searchText: String}

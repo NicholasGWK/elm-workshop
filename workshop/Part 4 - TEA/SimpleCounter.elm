@@ -4,6 +4,10 @@ import Html exposing (beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
 
 
+main =
+    beginnerProgram { model = model, view = view, update = update }
+
+
 model =
     0
 
@@ -22,7 +26,3 @@ view model =
         [ div [] [ model |> toString |> text ]
         , button [ onClick "Increment" ] [ text "Increment" ]
         ]
-
-
-main =
-    beginnerProgram { model = model, view = view, update = update }

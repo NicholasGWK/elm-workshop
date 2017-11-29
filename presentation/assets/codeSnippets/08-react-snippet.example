@@ -2,6 +2,6 @@ import React from "react";
 
 const myHtml = () => (
   <div className="flex w-100 items-center" id="myId">
-    <span> I am a child</span>
+    <span> I am a child </span>
   </div>
 );

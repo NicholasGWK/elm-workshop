@@ -1,7 +1,7 @@
 -- Write type annotations using type aliases where it makes sense
 
 
-module Expanding exposing (..)
+module TheSolution exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
@@ -35,8 +35,8 @@ view : Model -> Html Msg
 view model =
     div []
         [ div [] [ model |> toString |> text ]
-        , button [ onClick (Increment 2) ] [ text "Increment 2" ]
-        , button [ onClick (Decrement 2) ] [ text "Decerement 2" ]
+        , button [ Increment 2 |> onClick ] [ text "Increment 2" ]
+        , button [ Decrement 2 |> onClick ] [ text "Decerement 2" ]
         ]
 
 

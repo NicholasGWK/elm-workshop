@@ -39,7 +39,11 @@ myRecord =
 
 
 newRecord =
-    { myRecord | prop1 = "switched" }
+    { myRecord | prop1 = myRecord.prop1 ++ "test" }
+
+
+otherRecord =
+    { myRecord | prop2 = myRecord.prop2 + 5 }
 
 
 
@@ -51,7 +55,6 @@ myList =
 
 
 
--- Also has Dicts and Arrays, as well as some side effect types, but we don't need those yet
 --Functions are written with their name followed by the names of the arguments
 
 
@@ -79,8 +82,11 @@ sixteen =
     4 |> multBy2 |> multBy2
 
 
+alsoSixteen =
+    multBy2 (multBy2 4)
 
--- Same as multBy2 (multBy2 4)
+
+
 -- If statements are similar, but else is required
 -- Only douple equals for equality
 

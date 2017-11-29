@@ -4,8 +4,16 @@ import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
 
 
+main =
+    beginnerProgram { model = model, view = view, update = update }
+
+
 model =
     0
+
+
+
+-- msgs now look like this { operation = "Increment", amount = 2}
 
 
 update msg model =
@@ -26,7 +34,3 @@ view model =
         , button [ onClick { operation = "Increment", amount = 2 } ] [ text "Increment 2" ]
         , button [ onClick { operation = "Decrement", amount = 2 } ] [ text "Decerement 2" ]
         ]
-
-
-main =
-    beginnerProgram { model = model, view = view, update = update }

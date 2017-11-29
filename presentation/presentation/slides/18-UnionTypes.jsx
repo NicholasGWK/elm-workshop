@@ -32,10 +32,10 @@ const TypeAliases = [
         Union types in Elm are Tagged Unions
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        This means you can have a base type (tag) that is different
+        This means you can have a base tag that differs
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        But you can also have data associated with that type
+        But you can also have a data type associated with that tag
       </ListItem>
       <ListItem textSize={32} padding={5}>
         Can we think of anything in Elm that follows this?
@@ -72,7 +72,7 @@ const TypeAliases = [
         Tagged Unions are perfect for Msgs!
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        The have a main "operation" type, and then optionally some data
+        The have a main "operation" tag, and then optionally some data
       </ListItem>
       <ListItem textSize={32} padding={5}>
         Cleans up our code immensely!
