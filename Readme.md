@@ -47,8 +47,9 @@ your code look nice
 ### Part 1 - Syntax
 
 * [Official Elm Syntax Documentation](http://elm-lang.org/docs/syntax)
+* [Elm vs JS quick comparison](http://elm-lang.org/docs/from-javascript)
 
-### Part 2 & 3 - Rendering HTML + CSS
+  ### Part 2 & 3 - Rendering HTML + CSS
 
 * [elm-html package](http://package.elm-lang.org/packages/elm-lang/html/latest/)
 
@@ -61,4 +62,5 @@ your code look nice
 
 ### Part 4 & 5
 
-* See elm-guide and official elm documentation
+* See [elm-guide]((https://guide.elm-lang.org/) and (official elm
+  documentation)[http://elm-lang.org/docs]
