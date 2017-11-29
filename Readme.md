@@ -11,7 +11,7 @@ integrate these with your editor of choice. This will help us jump right in!
 
 `npm install -g elm elm-format`
 
-### Integrate with VSCode
+### Integrate with VS Code
 
 * Install the Elm plugin from the marketplace. That's it!
 * I recommend setting `"elm.formatOnSave": true` in your settings to format on
