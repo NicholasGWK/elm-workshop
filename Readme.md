@@ -2,8 +2,9 @@
 
 ### Prerequisites
 
-Before attending the workshop, please install the elm platform, elm-format, and
-integrate these with your editor of choice. This will help us jump right in!
+Before attending the workshop, please clone this repo, install the elm platform,
+elm-format, and integrate these with your editor of choice. This will help us
+jump right in!
 
 ### Install platform and elm-format
 
