@@ -3,6 +3,11 @@ import { Slide, Heading, List, ListItem } from "spectacle";
 
 const TEA = [
   <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={4} textColor="secondary" caps>
+      The Elm Architecture (TEA)
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6}> The Elm Architecture! </Heading>
     <List>
       <ListItem textSize={34} padding={4}>

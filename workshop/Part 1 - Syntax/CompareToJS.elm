@@ -120,10 +120,10 @@ advancedCase myList =
             "No items :("
 
         [ item ] ->
-            if item.weight > 100 then
-                "One large item!"
+            if item.height > 100 then
+                "One tall item!"
             else
-                "One small item"
+                "One not so tall item"
 
         items ->
             "Many items!"

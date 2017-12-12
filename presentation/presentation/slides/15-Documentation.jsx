@@ -3,6 +3,11 @@ import { Slide, Heading, List, ListItem } from "spectacle";
 
 const Documentation = [
   <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={2} textColor="secondary" caps>
+      Expanding Apps
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6}> Documentation </Heading>
     <List>
       <ListItem textSize={34} padding={5}>

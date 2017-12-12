@@ -8,7 +8,7 @@ main =
     div
         [ class "flex w-100 h-100 justify-center items-center" ]
         [ div [ class "flex-column" ]
-            [ h1 [ class "green" ] [ text "This is a cool header" ]
+            [ h1 [ class "green" ] [ text "This is a cool header we changed" ]
             , div [ class "i" ] [ text "stylish text" ]
             ]
         ]

@@ -4,6 +4,11 @@ import { Slide, Heading, List, ListItem } from "spectacle";
 
 const HTML = [
   <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={1} textColor="secondary" caps>
+      HTML
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
       HTML in Elm
     </Heading>

@@ -8173,7 +8173,7 @@ var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProg
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('This is a cool header'),
+							_0: _elm_lang$html$Html$text('This is a cool header we changed'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
