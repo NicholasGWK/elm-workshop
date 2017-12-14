@@ -14,7 +14,7 @@ const HTML = [
     </Heading>
     <List>
       <ListItem textSize={34} padding={4}>
-        We use functions to create elements and add attributes
+        Functions create elements and add attributes
       </ListItem>
       <ListItem textSize={34} padding={4}>
         Core part of the language, and very fast!

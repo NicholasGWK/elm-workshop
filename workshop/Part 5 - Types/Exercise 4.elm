@@ -7,10 +7,12 @@ import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
 
 
+model : Int
 model =
     0
 
 
+update : String -> Int -> Int
 update msg model =
     case msg of
         "Increment" ->

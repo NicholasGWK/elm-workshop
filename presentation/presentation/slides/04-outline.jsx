@@ -20,7 +20,7 @@ const Outline = [
         Render and style static HTML
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        The Elm Architecture(TEA) or how to build webapps
+        The Elm Architecture(TEA) - building webapps
       </ListItem>
       <ListItem textSize={36} padding={4}>
         Expanding Apps (with types!)

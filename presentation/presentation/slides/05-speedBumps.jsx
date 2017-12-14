@@ -15,10 +15,7 @@ const SpeedBumps = [
         Hardcore functional
       </ListItem>
       <ListItem textSize={34} padding={4}>
-        Old habits die hard
-      </ListItem>
-      <ListItem textSize={34} padding={4}>
-        New concepts are actually brand new, can be hard to grok
+        New concepts are brand new, can be hard to grok
       </ListItem>
     </List>
   </Slide>

@@ -26,10 +26,13 @@ const TypeAnnotations = [
         triple matches the name of the function
       </ListItem>
       <ListItem textSize={34} padding={5}>
-        The : means "has type"
+        The <Code margin={5}>:</Code> means "has type"
       </ListItem>
       <ListItem textSize={34} padding={5}>
-        -> separates arguments, the last one is the return value
+        <Code margin={5}> -></Code> separates arguments
+      </ListItem>
+      <ListItem textSize={34} padding={5}>
+        The last arg is the return value
       </ListItem>
     </List>
   </Slide>,

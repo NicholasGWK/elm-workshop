@@ -3,14 +3,25 @@ import { Slide, Heading, Text, Code, List, ListItem } from "spectacle";
 
 const HTMLProgram = [
   <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6}> Html.beginnerProgram </Heading>
-    <Text>Since TEA is part of Elm, it's all built in to elm-html! </Text>
+    <Heading margin={50} size={6}>
+      {" "}
+      Html.beginnerProgram{" "}
+    </Heading>
     <Code textSize={22}>
       {"Html.beginnerProgram { model = model, view = view, update = update }"}
     </Code>
+    <Text margin={50} textSize={32}>
+      Since TEA is part of Elm, it's all built-in to elm-html!{" "}
+    </Text>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6}> The args </Heading>
+    <Heading margin={50} size={6}>
+      {" "}
+      The args{" "}
+    </Heading>
+    <Code textSize={22}>
+      {"Html.beginnerProgram { model = model, view = view, update = update }"}
+    </Code>
     <List>
       <ListItem textSize={34} padding={5}>
         Model: What is the intial value of your model?
