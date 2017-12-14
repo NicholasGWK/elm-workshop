@@ -6,18 +6,3 @@
 
 
 module Main exposing (..)
-
-
-myRecord =
-    { myBool = True
-    , myFloat = 3.12
-    , myString = "A string!"
-    }
-
-
-myList =
-    [ "some", "string" ]
-
-
-verifyName myString =
-    myString == "myName"

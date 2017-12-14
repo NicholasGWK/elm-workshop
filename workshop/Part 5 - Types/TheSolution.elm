@@ -1,6 +1,3 @@
--- Write type annotations using type aliases where it makes sense
-
-
 module TheSolution exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, text)

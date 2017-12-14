@@ -44,14 +44,4 @@ main =
     beginnerProgram { model = model, view = view, update = update }
 
 
-type alias AmountMsg =
-    { operation : String, amount : Int }
-
-
-type alias SearchMsg =
-    { operation : String, searchText : String }
-
-
-type Msg
-    = AmountMsg
-    | SearchMsg
+type alias Msg = ???

@@ -6,14 +6,3 @@
 module Exercise2 exposing (..)
 
 import Html exposing (button, div, input, li, text, ul)
-
-
-main =
-    div []
-        [ ul []
-            [ li [] [ text "Item 1" ]
-            , li [] [ text "Item 2" ]
-            ]
-        , input [] []
-        , button [] [ text "A button, perchance" ]
-        ]
