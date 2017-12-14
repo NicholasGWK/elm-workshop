@@ -24,6 +24,9 @@ const CSS = [
       <ListItem textSize={32} padding={4}>
         Tachyons is a GREAT fit
       </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Extra development setup
+        </ListItem>
     </List>
   </Slide>
 ];

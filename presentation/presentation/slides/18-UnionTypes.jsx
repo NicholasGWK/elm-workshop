@@ -8,7 +8,7 @@ const TypeAliases = [
     <Heading size={6}> Union Types </Heading>
     <List padding={30}>
       <ListItem textSize={32} padding={5}>
-        Represent a value that can be one of n types
+        Represent a type that can be one of n possible values
       </ListItem>
       <ListItem textSize={32} padding={5}>
         This OR That OR Foo
@@ -32,7 +32,7 @@ const TypeAliases = [
         Union types in Elm are Tagged Unions
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        This means you can have a base tag that differs
+        This means you can have a base tag for each value
       </ListItem>
       <ListItem textSize={32} padding={5}>
         But you can also have a data type associated with that tag
