@@ -1,0 +1,11 @@
+init : (Model, Cmd Msg)
+update: Msg -> Model -> (Model, Cmd Msg)
+view: Model -> Html Msg
+subscriptions: Model -> Sub Msg
+
+main = 
+   Html.program { init = init
+                , update = update
+                , view = view
+                , subscriptions = subscriptions 
+                }
