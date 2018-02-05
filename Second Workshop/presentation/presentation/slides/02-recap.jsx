@@ -219,6 +219,125 @@ const Recap = [
     <Heading size={6} textColor="tertiary" caps>
       Subscription Exercise
     </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Deploying Elm
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Elm compiles to JS
+    </Heading>
+    <List textSize={36}>
+      <ListItem textSize={32} padding={4}>
+        elm-reactor takes away complexity but is limited
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        No webpack solution is elm make
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        <Code textSize={28}>elm-make src/Main.elm --output=main.js</Code>
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Embedding gives us JS interop
+      </ListItem>
+    </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Embedding example
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      More advanced embedding
+    </Heading>
+    <List textSize={36}>
+      <ListItem textSize={32} padding={4}>
+        Compile to JS is the basis
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Can use webpack, elm-loader
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        There is a react component which takes src
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        The more important part is it allows Ports!
+      </ListItem>
+    </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Ports
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Ports - Talk to JS
+    </Heading>
+    <List textSize={36}>
+      <ListItem textSize={32} padding={4}>
+        Elm is amazing, but sometimes we need JS
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Librararies with no equivalent (AWS Cognito)
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Parts of the HTML spec (localStorage)
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Gradual Adoption/ Service workers / PWAs
+      </ListItem>
+    </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Text textColor={"secondary"}>
+      We need Elm to send values to JS and listen for values sent in
+    </Text>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Text textColor={"secondary"}>I wonder what we can use...</Text>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Ports Example
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Ports Example
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Ports Exercise
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Full Example
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      What's left?
+    </Heading>
+    <List textSize={36}>
+      <ListItem textSize={32} padding={4}>
+        Not much!
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Advanced Decoders
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Flags
+      </ListItem>
+      <ListItem textSize={32} padding={4}>
+        Gradual Adoption/ Service workers / PWAs
+      </ListItem>
+    </List>
   </Slide>
 ];
 
