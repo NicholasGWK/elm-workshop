@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Elm? Or HTML?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="elmEmbed.js"></script>
+</head>
+
+<body>
+  <div> Hello From HTML!</div>
+  <div id="jsDiv"></div>
+  <div id="elmRoot"></div>
+  <script>
+    const js = document.getElementById('jsDiv').innerText = "Hello from JS!";
+    const elm = Elm.Main.embed(document.getElementById('elmRoot'));
+  </script>
+</body>
+
+</html>

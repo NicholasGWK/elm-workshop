@@ -293,17 +293,15 @@ const Recap = [
     </List>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
-    <Text textColor={"secondary"}>
+    <Text textColor={"tertiary"}>
       We need Elm to send values to JS and listen for values sent in
     </Text>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
-    <Text textColor={"secondary"}>I wonder what we can use...</Text>
+    <Text textColor={"tertiary"}>I wonder what we can use...</Text>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="tertiary" caps>
-      Ports Example
-    </Heading>
+    <Text textColor={"tertiary"}>Subscriptions into Elm, Cmds out to JS!</Text>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
@@ -329,13 +327,13 @@ const Recap = [
         Not much!
       </ListItem>
       <ListItem textSize={32} padding={4}>
-        Advanced Decoders
+        Advanced Decoders, Data Structures
       </ListItem>
       <ListItem textSize={32} padding={4}>
-        Flags
+        Routing
       </ListItem>
       <ListItem textSize={32} padding={4}>
-        Gradual Adoption/ Service workers / PWAs
+        Architecture
       </ListItem>
     </List>
   </Slide>
