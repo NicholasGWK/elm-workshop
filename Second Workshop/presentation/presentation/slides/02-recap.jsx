@@ -15,7 +15,30 @@ import Elm from "../../assets/images/Elm.png";
 import ElmTEA from "../../assets/images/ElmTEA.svg";
 import RunTimeCommand from "../../assets/images/ElmRuntime.svg";
 import httpSnippet from "../../assets/codeSnippets/httpSnippet.example";
+import fetchSnippet from "../../assets/codeSnippets/fetchSnippet.example";
 const Recap = [
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Outline
+    </Heading>
+    <List textSize={36}>
+      <ListItem textSize={36} padding={4}>
+        Recap
+      </ListItem>
+      <ListItem textSize={36} padding={4}>
+        Commands
+      </ListItem>
+      <ListItem textSize={36} padding={4}>
+        Subscriptions
+      </ListItem>
+      <ListItem textSize={36} padding={4}>
+        Deploying Elm
+      </ListItem>
+      <ListItem textSize={36} padding={4}>
+        Ports
+      </ListItem>
+    </List>
+  </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
       Ugh, Part 1 was SOOOOO long ago
@@ -53,27 +76,8 @@ const Recap = [
     </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="secondary" caps>
-      Outline
-    </Heading>
-    <List textSize={36}>
-      <ListItem textSize={36} padding={4}>
-        Commands
-      </ListItem>
-      <ListItem textSize={36} padding={4}>
-        Subscriptions
-      </ListItem>
-      <ListItem textSize={36} padding={4}>
-        Deploying Elm
-      </ListItem>
-      <ListItem textSize={36} padding={4}>
-        JS...and ports!
-      </ListItem>
-    </List>
-  </Slide>,
-  <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
-      What are commands?
+      Commands - What are they?
     </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
@@ -144,15 +148,21 @@ const Recap = [
         May need to build complex requests
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        The request can fail or error!
+        The request can fail or error
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        JSON in Elm needs to be encoded/decoded
+        Return value must be decoded (text, JSON)
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        If the JSON is wrong, it can also fail to decode!
+        Decoding can fail/error
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Fetch in JS
+    </Heading>
+    <CodePane margin={20} textSize={28} lang="jsx" source={fetchSnippet} />
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
@@ -166,7 +176,7 @@ const Recap = [
         Result type to handle errors
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        JSON decoders return Result
+        JSON decoders to handle response
       </ListItem>
     </List>
   </Slide>,
@@ -188,7 +198,7 @@ const Recap = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
-      Subscriptions
+      Subscriptions - What are they?
     </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
@@ -310,12 +320,7 @@ const Recap = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
-      Ports Exercise
-    </Heading>
-  </Slide>,
-  <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="tertiary" caps>
-      Full Example
+      Full Exercise
     </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">

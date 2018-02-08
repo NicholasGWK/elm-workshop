@@ -1,0 +1,11 @@
+const config = {
+  method: 'GET',
+  headers: new Headers(...headers)
+};
+
+const myUrl = "http://www.example.com";
+
+fetch(myUrl, config)
+  .then(res => res.json())
+  .then(handleResponse)
+  .catch(handleErr);
