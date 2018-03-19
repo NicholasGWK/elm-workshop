@@ -7,10 +7,22 @@ import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)
 
 
+type alias Model =
+    Int
+
+
+type alias Msg =
+    { operation : String
+    , amount : Int
+    }
+
+
+model : Model
 model =
     0
 
 
+update : Msg -> Model -> Model
 update msg model =
     case msg.operation of
         "Increment" ->
@@ -27,6 +39,7 @@ update msg model =
 -- Helpful hint: view: ??? -> Html ???
 
 
+view : Model -> Html Msg
 view model =
     div []
         [ div [] [ model |> toString |> text ]

@@ -35,7 +35,7 @@ view model =
         [ div [] [ model |> toString |> text ]
         , button [ onClick { operation = "Increment", amount = 2 } ] [ text "Increment 2" ]
         , button [ onClick { operation = "Decrement", amount = 2 } ] [ text "Decerement 2" ]
-        , button [ onClick { operation = "Search", searchText = "Elm tutorials!" } ] [ text "Search" ]
+        , button [ onClick { operation = "Search", searchText = "Elm tutorials!", amount = 0 } ] [ text "Search" ]
         , div [] [ text model.searchText ]
         ]
 
@@ -44,4 +44,5 @@ main =
     beginnerProgram { model = model, view = view, update = update }
 
 
-type alias Msg = ???
+type alias Msg =
+    { operation : String, amount : Int, searchText : String }

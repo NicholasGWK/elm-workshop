@@ -6,3 +6,21 @@
 
 
 module Main exposing (..)
+
+
+myRecord =
+    { myBool = True
+    , myFloat = 31.2
+    myString = "Something"
+    }
+
+
+myList =
+    [ "some", "string" ]
+
+
+verifyName name =
+    if name == "Nick" then
+        True
+    else
+        False
