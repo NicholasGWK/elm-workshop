@@ -72,7 +72,12 @@ const Recap = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
-      Recap example + Exercise!
+      Recap Exercise!
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      Side Effects
     </Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
@@ -154,9 +159,20 @@ const Recap = [
         Return value must be decoded (text, JSON)
       </ListItem>
       <ListItem textSize={36} padding={4}>
-        Decoding can fail/error
+        Decoding can fail or error
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="tertiary" caps>
+      What do we use in JS?
+    </Heading>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Fetch in JS
+    </Heading>
+    <CodePane margin={20} textSize={28} lang="jsx" source={fetchSnippet} />
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
@@ -176,15 +192,17 @@ const Recap = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
-      Fetch in JS
-    </Heading>
-    <CodePane margin={20} textSize={28} lang="jsx" source={fetchSnippet} />
-  </Slide>,
-  <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="secondary" caps>
       Http
     </Heading>
     <CodePane margin={20} textSize={25} lang="jsx" source={httpSnippet} />
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6}>Random.generate vs Http.send</Heading>
+    <Code textSize={24}>generate : (a -> msg) -> Generator a -> Cmd msg</Code>
+    <br />
+    <Code textSize={24}>
+      send: (Result Http.Error a -> msg) -> Request a -> Cmd msg
+    </Code>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>
@@ -219,6 +237,10 @@ const Recap = [
         Also represented as data!
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6}>Mouse.moves</Heading>
+    <Code textSize={30}> moves : (Position -> msg) -> Sub msg</Code>
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="tertiary" caps>

@@ -1,4 +1,5 @@
 -- Based on random example, write a program that rolls a die!
+-- Use Random.int http://package.elm-lang.org/packages/elm-lang/core/latest/Random#int
 module RandomExercise exposing (..)
 
 import Html exposing (Html, button, div, program, text)

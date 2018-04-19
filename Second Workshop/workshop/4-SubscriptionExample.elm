@@ -1,3 +1,6 @@
+-- See http://package.elm-lang.org/packages/elm-lang/mouse/1.0.1/Mouse#moves
+
+
 module SubscriptionExample exposing (..)
 
 import Html exposing (Html, div, program, text)

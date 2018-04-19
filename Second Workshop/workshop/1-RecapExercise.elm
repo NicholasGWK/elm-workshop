@@ -1,28 +1,35 @@
--- Write an elm program that reverses a string when you type into an input
--- Use built in String.reverse function
-module RecapExercise exposing (..)
+module RecapExample exposing (..)
 
-import Html exposing (Html, beginnerProgram, input, div, text)
-import Html.Events exposing (onInput)
+import Html exposing (Html, beginnerProgram, button, div, text)
+import Html.Events exposing (onClick)
 
 
 type alias Model =
+    Int
 
 
-type Msg =
+type Msg
+    = Increment Int
 
 
 model : Model
 model =
+    0
+
 
 update : Msg -> Model -> Model
 update msg model =
-
+    case msg of
+        Increment amt ->
+            model + amt
 
 
 view : Model -> Html Msg
 view model =
-
+    div []
+        [ div [] [ model |> toString |> text ]
+        , button [ Increment 2 |> onClick ] [ text "Increment 2" ]
+        ]
 
 
 main =

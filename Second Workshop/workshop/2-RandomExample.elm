@@ -1,3 +1,6 @@
+-- See http://package.elm-lang.org/packages/elm-lang/core/latest/Random
+
+
 module RandomExample exposing (..)
 
 import Html exposing (Html, button, div, program, text)
@@ -11,7 +14,7 @@ type alias Model =
 
 type Msg
     = Flip
-    | NewToss Bool
+    | TossResult Bool
 
 
 init : ( Model, Cmd Msg )
@@ -20,7 +23,7 @@ init =
 
 
 
--- Remember NewToss is now a constructor so NewToss: Bool -> NewToss Bool
+-- Remember TossResult is now a constructor so TossResult: Bool -> TossResult Bool
 -- So it will work for our (a -> Msg) function that Random.generate needs
 
 
@@ -28,9 +31,9 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Flip ->
-            ( model, Random.generate NewToss Random.bool )
+            ( model, Random.generate TossResult Random.bool )
 
-        NewToss flip ->
+        TossResult flip ->
             ( flip, Cmd.none )
 
 
