@@ -19,6 +19,11 @@ init =
     ( False, Cmd.none )
 
 
+
+-- Remember NewToss is now a constructor so NewToss: Bool -> NewToss Bool
+-- So it will work for our (a -> Msg) function that Random.generate needs
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of

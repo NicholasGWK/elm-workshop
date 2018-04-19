@@ -2,9 +2,9 @@ Http.get : String -> Decoder a -> Request a
 
 Http.send : (Result Http.Error a -> msg) -> Request a -> Cmd msg
 
-type Result error value
-    = Ok value
-    | Err error
+type Result a b
+    = Ok a
+    | Err b
 
 Result is generic, like identity:
 identity<T>: (input: T) => T

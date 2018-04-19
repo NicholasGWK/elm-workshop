@@ -15,7 +15,7 @@ type Msg
 init : ( Model, Cmd Msg )
 init =
 
-
+-- Random.int: Int -> Int -> Generator Int
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of

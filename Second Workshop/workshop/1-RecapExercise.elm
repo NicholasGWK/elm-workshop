@@ -1,5 +1,5 @@
 -- Write an elm program that reverses a string when you type into an input
-
+-- Use built in String.reverse function
 module RecapExercise exposing (..)
 
 import Html exposing (Html, beginnerProgram, input, div, text)

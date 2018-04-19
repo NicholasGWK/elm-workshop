@@ -160,12 +160,6 @@ const Recap = [
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
-      Fetch in JS
-    </Heading>
-    <CodePane margin={20} textSize={28} lang="jsx" source={fetchSnippet} />
-  </Slide>,
-  <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="secondary" caps>
       Elm has us covered
     </Heading>
     <List textSize={36}>
@@ -179,6 +173,12 @@ const Recap = [
         JSON decoders to handle response
       </ListItem>
     </List>
+  </Slide>,
+  <Slide bgColor="primary" textColor="tertiary">
+    <Heading size={6} textColor="secondary" caps>
+      Fetch in JS
+    </Heading>
+    <CodePane margin={20} textSize={28} lang="jsx" source={fetchSnippet} />
   </Slide>,
   <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>
@@ -216,7 +216,7 @@ const Recap = [
         Basically just observables
       </ListItem>
       <ListItem textSize={32} padding={4}>
-        Also data!
+        Also represented as data!
       </ListItem>
     </List>
   </Slide>,
