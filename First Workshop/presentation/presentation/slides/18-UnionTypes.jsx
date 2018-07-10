@@ -32,10 +32,10 @@ const TypeAliases = [
         Union types in Elm are Tagged Unions
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        This means you can have a base tag for each value
+        This means you can have set of tags
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        But you can also have a data type associated with that tag
+        But also data: <Code>Tag DataType </Code>
       </ListItem>
       <ListItem textSize={32} padding={5}>
         Can we think of anything in Elm that follows this?
@@ -50,11 +50,11 @@ const TypeAliases = [
     <Heading size={6}> Tagged Union</Heading>
     <List padding={30}>
       <ListItem textSize={32} padding={5}>
-        Html String means the Html type has a second param String
+        <Code textSize={24}>Html String</Code>: the Html tag comes with string
+        data
       </ListItem>
       <ListItem textSize={32} padding={5}>
-        You could have a union type of different types that may or may not have
-        data
+        We have a set of tags that also have data attached
       </ListItem>
       <ListItem textSize={32} padding={5}>
         Does this sound like anything we've used?
