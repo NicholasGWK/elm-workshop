@@ -8,14 +8,19 @@ import Html.Events exposing (onClick)
 
 
 type alias Model =
+    Int
 
 
 type alias Msg =
+    String
 
+
+model : Model
 model =
     0
 
 
+update : Msg -> Model -> Model
 update msg model =
     case msg.operation of
         "Increment" ->
@@ -31,6 +36,8 @@ update msg model =
 
 -- Helpful hint: view: ??? -> Html ???
 
+
+view : Msg -> Html Msg
 view model =
     div []
         [ div [] [ model |> toString |> text ]

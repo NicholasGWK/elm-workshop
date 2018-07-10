@@ -9,9 +9,18 @@ module Main exposing (..)
 
 
 myRecord =
+    { myBool = True
+    , myFloat = 3.14
+    , myString = "Hello"
+    }
 
 
 myList =
+    [ "Hello", "World" ]
 
 
 verifyName name =
+    if name == "Nick" then
+        True
+    else
+        False

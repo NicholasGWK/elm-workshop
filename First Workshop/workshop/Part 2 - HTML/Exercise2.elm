@@ -9,11 +9,3 @@ import Html exposing (button, div, input, li, text, ul)
 
 
 main =
-    div []
-        [ ul []
-            [ li [] [ text "Item one" ]
-            , li [] [ text "item 2" ]
-            ]
-        , input [] []
-        , button [] [ text "Click me!" ]
-        ]
