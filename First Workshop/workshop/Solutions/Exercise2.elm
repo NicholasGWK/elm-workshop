@@ -7,8 +7,11 @@ module Exercise2 exposing (..)
 
 import Html exposing (button, div, input, li, text, ul)
 
+
 -- Type is a reserved keyword in elm, so for buttons etc we use _type
-import Hmtl.Attributes exposing (_type)
+
+import Html.Attributes exposing (type_)
+
 
 main =
     div []
@@ -17,5 +20,5 @@ main =
             , li [] [ text "Hello!" ]
             ]
         , button [] [ text "Click!" ]
-        , input [_type "text"] []
+        , input [ type_ "text" ] []
         ]
