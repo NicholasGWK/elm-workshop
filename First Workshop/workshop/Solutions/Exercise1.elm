@@ -5,7 +5,7 @@
 -}
 
 
-module Main exposing (..)
+module Main exposing (myList, myRecord, verifyName)
 
 
 myRecord =
@@ -22,5 +22,6 @@ myList =
 verifyName name =
     if name == "Nick" then
         True
+
     else
         False

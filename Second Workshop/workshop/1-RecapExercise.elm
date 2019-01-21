@@ -1,4 +1,4 @@
-module RecapExample exposing (..)
+module Main exposing (..)
 
 import Html exposing (Html, beginnerProgram, button, div, text)
 import Html.Events exposing (onClick)

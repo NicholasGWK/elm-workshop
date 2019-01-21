@@ -1,14 +1,15 @@
 --Add type annotations!
 
 
-module Exercise4 exposing (..)
+module Exercise4 exposing (initModel, main, update, view)
 
-import Html exposing (Html, beginnerProgram, button, div, text)
+import Browser
+import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 
 
-model : Int
-model =
+initModel : Int
+initModel =
     0
 
 
@@ -28,11 +29,11 @@ update msg model =
 view : Int -> Html String
 view model =
     div []
-        [ div [] [ model |> toString |> text ]
+        [ div [] [ model |> String.fromInt |> text ]
         , button [ onClick "Increment" ] [ text "Increment" ]
         , button [ onClick "Decrement" ] [ text "Decrement" ]
         ]
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = initModel, view = view, update = update }

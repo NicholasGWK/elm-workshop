@@ -1,14 +1,15 @@
-module Expanding exposing (..)
+module Expanding exposing (initModel, main, update, view)
 
-import Html exposing (Html, beginnerProgram, button, div, text)
+import Browser
+import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = initModel, view = view, update = update }
 
 
-model =
+initModel =
     0
 
 
@@ -30,7 +31,7 @@ update msg model =
 
 view model =
     div []
-        [ div [] [ model |> toString |> text ]
+        [ div [] [ model |> String.fromInt |> text ]
         , button [ onClick { operation = "Increment", amount = 2 } ] [ text "Increment 2" ]
         , button [ onClick { operation = "Decrement", amount = 2 } ] [ text "Decerement 2" ]
         ]

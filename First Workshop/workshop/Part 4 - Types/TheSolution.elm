@@ -1,41 +1,48 @@
-module TheSolution exposing (..)
+module TheProblem exposing (Model, Msg, initModel, main, update, view)
 
-import Html exposing (Html, beginnerProgram, button, div, text)
-import Html.Events exposing (onClick)
+import Browser
+import Html exposing (Html, button, div, input, text)
+import Html.Events exposing (onClick, onInput)
 
 
 type alias Model =
-    Int
+    { count : Int, searchText : String }
 
 
 type Msg
     = Increment Int
     | Decrement Int
+    | UpdateSearch String
 
 
-model : Model
-model =
-    0
+initModel : Model
+initModel =
+    { count = 0, searchText = "" }
 
 
 update : Msg -> Model -> Model
 update msg model =
     case msg of
-        Increment amt ->
-            model + amt
+        Increment inc ->
+            { model | count = model.count + inc }
 
-        Decrement amt ->
-            model - amt
+        Decrement dec ->
+            { model | count = model.count - dec }
+
+        UpdateSearch str ->
+            { model | searchText = str }
 
 
 view : Model -> Html Msg
 view model =
     div []
-        [ div [] [ model |> toString |> text ]
-        , button [ Increment 2 |> onClick ] [ text "Increment 2" ]
-        , button [ Decrement 2 |> onClick ] [ text "Decerement 2" ]
+        [ div [] [ model.count |> String.fromInt |> text ]
+        , button [ onClick (Increment 2) ] [ text "Increment 2" ]
+        , button [ onClick (Decrement 2) ] [ text "Decerement 2" ]
+        , div [] [ input [ onInput UpdateSearch ] [ text "Search" ] ]
+        , div [] [ text ("Search Text: " ++ model.searchText) ]
         ]
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = initModel, view = view, update = update }

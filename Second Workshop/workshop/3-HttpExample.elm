@@ -1,4 +1,4 @@
-module HttpExample exposing (..)
+module Main exposing (..)
 
 import Html exposing (Html, button, div, program, text)
 import Html.Events exposing (onClick)

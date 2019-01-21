@@ -3,9 +3,10 @@
 -- and an input/button combo at the bottom
 
 
-module Exercise2 exposing (..)
+module Exercise2 exposing (main)
 
 import Html exposing (button, div, input, li, text, ul)
 
 
 main =
+    asdf

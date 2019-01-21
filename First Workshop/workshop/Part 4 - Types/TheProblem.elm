@@ -1,6 +1,7 @@
-module TheProblem exposing (..)
+module TheProblem exposing (Model, Msg, initModel, main, modelToString, update, view)
 
-import Html exposing (Html, beginnerProgram, button, div, input, text)
+import Browser
+import Html exposing (Html, button, div, input, text)
 import Html.Events exposing (onClick)
 
 
@@ -8,8 +9,8 @@ type alias Model =
     { count : Int, searchText : String }
 
 
-model : Model
-model =
+initModel : Model
+initModel =
     { count = 0, searchText = "" }
 
 
@@ -29,19 +30,24 @@ update msg model =
             model
 
 
+modelToString : Model -> String
+modelToString model =
+    String.fromInt model.count ++ " " ++ model.searchText
+
+
 view : Model -> Html Msg
 view model =
     div []
-        [ div [] [ model |> toString |> text ]
+        [ div [] [ model |> modelToString |> text ]
         , button [ onClick { operation = "Increment", amount = 2 } ] [ text "Increment 2" ]
         , button [ onClick { operation = "Decrement", amount = 2 } ] [ text "Decerement 2" ]
-        , button [ onClick { operation = "Search", searchText = "Elm tutorials!", amount = 0 } ] [ text "Search" ]
+        , button [ onClick { operation = "Search", searchText = "Elm tutorials!" } ] [ text "Search" ]
         , div [] [ text model.searchText ]
         ]
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = initModel, view = view, update = update }
 
 
 type alias Msg =
