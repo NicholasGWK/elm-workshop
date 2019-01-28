@@ -9,4 +9,3 @@ import Html exposing (button, div, input, li, text, ul)
 
 
 main =
-    asdf

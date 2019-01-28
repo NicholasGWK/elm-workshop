@@ -6,7 +6,7 @@
 -}
 
 
-module Main exposing (..)
+module Main exposing (advancedCase, alsoSixteen, isNick, multBy2, multiplierFunction, myBool, myFloat, myList, myNum, myRecord, myString, newRecord, otherRecord, simpleCase, six, sixteen)
 
 import Html exposing (Html)
 import Html.Attributes exposing (..)
@@ -94,6 +94,7 @@ alsoSixteen =
 isNick name =
     if name == "Nick" then
         True
+
     else
         False
 
@@ -102,8 +103,8 @@ isNick name =
 -- case statement is like switch but with very powerful pattern matching. _ is default case
 
 
-simpleCase myString =
-    case myString of
+simpleCase aString =
+    case aString of
         "Nick is cool" ->
             False
 
@@ -114,16 +115,29 @@ simpleCase myString =
             True
 
 
-advancedCase myList =
-    case myList of
+advancedCase aList =
+    case aList of
         [] ->
             "No items :("
 
         [ item ] ->
             if item.height > 100 then
                 "One tall item!"
+
             else
                 "One not so tall item"
 
         items ->
             "Many items!"
+
+
+
+-- No Variable shadowing!
+
+
+someInt =
+    12
+
+
+functionWithInt someInt =
+    someInt * 2
