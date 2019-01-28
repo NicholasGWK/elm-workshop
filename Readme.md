@@ -10,32 +10,28 @@ jump right in!
 
 **NOTE**
 
-There can be some _weirdness_ installing elm and integrating
+There can be some _weirdness_ installing elm with yarn/npm and integrating
 with you editor if you use npm + nvm + particularly VSCode due to some path stuff.
 
-Your best bet is to install the binaries to /usr/bin/ and point your editor there, but it's more work. Reach out if things aren't working!
+Your best bet is to install the binaries to /usr/local/bin instead.
 
-To install at the project level (recommended), simply `npm install/yarn` inside the workshop folder (i.e. First Workshop/workshop).
+- [Elm 0.19 installer for Mac](https://github.com/elm/compiler/releases/download/0.19.0/installer-for-mac.pkg)
+- [elm-format binary for Mac](https://github.com/avh4/elm-format/releases/download/0.8.1/elm-format-0.8.1-mac-x64.tgz)
 
 ### Integrate with VS Code
 
-- Install the Elm plugin from the marketplace.
-- Add the elm-format and elm-make commands to your vscode settings (see [here](https://github.com/Krzysztof-Cieslak/vscode-elm#project-local-installation))
+- Install the Elm language support from the marketplace.
+- [ Then follow this](https://github.com/avh4/elm-format/tree/0.8.1#visual-studio-code-installation)
 
 ### Integrate with Atom
 
-**Possibly outdated, I switched to VSCode several months back**
-
-- Install elm-format package
 - Install language-elm package
-- Install linter + linter-elm-make packages. You may get an error about linter +
-  diagnostics if you are using atom-ide packages. Unfortunately you must leave
-  both enable as there is not yet an elm-ide package.
-- Optionally install elmjustu, which provides great autocomplete
+- Install elm-format package
+- Install elmjutsu for autocomplete (do not follow the default instructions for language-elm, won't work for 0.19)
 
 ### Integrate with other editors
 
-`¯\_( ツ )_/¯`
+`:grimace:` I have no idea :P.
 
 Mostly it's important to get elm-make running automatically on save to see
 compile errors in your editor in real-time, and to have elm-format run to make
@@ -58,9 +54,9 @@ your code look nice
 
 ### Part 2 & 3 - Rendering HTML + CSS
 
-- [elm-html package](http://package.elm-lang.org/packages/elm-lang/html/latest/)
+- [elm/html package](http://package.elm-lang.org/packages/elm/html/latest/)
 
-- [elm-tachyons](http://package.elm-lang.org/packages/justgage/tachyons-elm/latest/Tachyons)
+- [elm tachyons](https://package.elm-lang.org/packages/justgage/tachyons-elm/latest/)
 - [elm-style-elements](http://package.elm-lang.org/packages/mdgriffith/style-elements/latest)
 
 - [elm-css](https://github.com/rtfeldman/elm-css)

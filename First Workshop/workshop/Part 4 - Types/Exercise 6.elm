@@ -2,7 +2,8 @@
 
 module FullApp exposing (..)
 
-import Html exposing (Html, beginnerProgram, button, div, input, text)
+import Browser
+import Html exposing (Html, button, div, input, text)
 import Html.Events exposing (onClick)
 
 
@@ -13,8 +14,8 @@ type alias Model =
 type Msg = ???
 
 
-model : Model
-model =
+initModel : Model
+initModel =
     { count = 0, searchText = "" }
 
 
@@ -46,4 +47,4 @@ view model =
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { initModel = initModel, view = view, update = update }

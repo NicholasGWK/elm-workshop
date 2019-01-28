@@ -3,15 +3,16 @@
 
 module Exercise3 exposing (..)
 
-import Html exposing (beginnerProgram, button, div, text)
+import Browser
+import Html exposing (button, div, text)
 import Html.Events exposing (onClick)
 
 
 main =
-    beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = initModel, view = view, update = update }
 
 
-model =
+initModel =
     
 update msg model =
 
