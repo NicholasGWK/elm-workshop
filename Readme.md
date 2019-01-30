@@ -11,9 +11,11 @@ jump right in!
 **NOTE**
 
 There can be some _weirdness_ installing elm with yarn/npm and integrating
-with you editor if you use npm + nvm + particularly VSCode due to some path stuff.
+with you editor if you use npm + nvm + VSCode due to some path stuff.
 
-Your best bet is to install the binaries to /usr/local/bin instead.
+Your best bet is to install the binaries to /usr/local/bin instead, and make sure that's on your path ( if you can run elm / elm-format from the command line, you're good!)
+
+If that fails, try the accepted method of `npm install -g elm elm-format`
 
 - [Elm 0.19 installer for Mac](https://github.com/elm/compiler/releases/download/0.19.0/installer-for-mac.pkg)
 - [elm-format binary for Mac](https://github.com/avh4/elm-format/releases/download/0.8.1/elm-format-0.8.1-mac-x64.tgz)
