@@ -1,8 +1,9 @@
 {
-  "dependencies": {
-    "elm-live": "^2.7.5"
-  },
+  "dependencies": {},
   "scripts": {
-    "start": "elm-live --output=elm.js StylesAndMore.elm --open"
+    "start": "elm-live StylesAndMore.elm --open --start-page=custom.html -- --output=elm.js"
+  },
+  "devDependencies": {
+    "elm-live": "^3.4.0"
   }
 }
