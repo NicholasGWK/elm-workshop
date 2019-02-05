@@ -1,12 +1,29 @@
 -- Full docs are here http://elm-lang.org/docs/syntax
 -- This is how you comment in Elm!
--- Elm has several primitives: Number, Float, Bool, String, Record, List
+-- Elm has several primitives: Int, Float, Bool, String, Record, List
 {- Sometimes comments are
    multiline
 -}
 
 
-module Main exposing (advancedCase, alsoSixteen, isNick, multBy2, multiplierFunction, myBool, myFloat, myList, myNum, myRecord, myString, newRecord, otherRecord, simpleCase, six, sixteen)
+module Main exposing
+    ( advancedCase
+    , alsoSixteen
+    , isNick
+    , multBy2
+    , multiplierFunction
+    , myBool
+    , myFloat
+    , myList
+    , myNum
+    , myRecord
+    , myString
+    , newRecord
+    , otherRecord
+    , simpleCase
+    , six
+    , sixteen
+    )
 
 import Html exposing (Html)
 import Html.Attributes exposing (..)
