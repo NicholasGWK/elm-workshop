@@ -1,9 +1,0 @@
-import Html exposing (div, span, text)
-import Html.Attributes exposing (class, id)
-
-myHtml =
-    div
-        [ class "flex w-100", id "myId" ]
-        [ span []
-            [ text "I am a child" ]
-        ]
